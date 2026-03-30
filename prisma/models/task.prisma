@@ -1,0 +1,17 @@
+model Task {
+  id          Int        @id @default(autoincrement())
+  title       String
+  description String
+  createdAt   DateTime   @default(now())
+  assignUser  String
+  status      TaskStatus @default(TODO)
+
+  user   User? @relation(fields: [userId], references: [id])
+  userId Int?
+}
+
+enum TaskStatus {
+  TODO
+  DOING
+  DONE
+}
