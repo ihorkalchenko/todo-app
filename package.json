@@ -1,7 +1,7 @@
 {
   "name": "todo-app",
   "version": "0.0.1",
-  "description": "Simple TODO application using NestJS, Prisma, Angular",
+  "description": "Simple TODO application using NestJS, Prisma",
   "author": "Ihor Kalchenko",
   "private": true,
   "license": "UNLICENSED",
